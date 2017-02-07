@@ -1,0 +1,10 @@
+startup_message off
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{= kb}%-w%{= kB}%n %t%{-}%+w"
+
+altscreen on
+term screen-256color
+vbell off
+defscrollback 1000000
