@@ -17,7 +17,7 @@ POS_0_X=0
 POS_0_Y=0
 
 # Set size of window in rows and columns
-SIZE_ROW=73
+SIZE_ROW=75
 SIZE_COL=80
 printf "\033[8;"$SIZE_ROW";"$SIZE_COL"t"
 
