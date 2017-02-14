@@ -6,13 +6,12 @@ export GREP_COLOR='1;35;40'
 ulimit -n 8192
 alias ssh-add='ssh-add -t 12h'
 
-
-INIT_SCRIPTS_DIR=Dropbox/Code/dotfiles/init_scripts
-
 if [ $TERM_PROGRAM = 'Apple_Terminal' ]; then
-    $INIT_SCRIPTS_DIR/resize_terminal.sh
-else # iTerm2
-    $INIT_SCRIPTS_DIR/watch_status.sh
+    Dropbox/Code/dotfiles/resize_terminal.sh
+fi
+
+if [ $TERM_PROGRAM = 'iTerm.app' ]; then
+    Dropbox/Code/minidock/minidock.sh &
 fi
 
 

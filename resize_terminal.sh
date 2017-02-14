@@ -34,8 +34,9 @@ stty $stty_backup # restore state
 if [ $# -ne 0 ]; then
     pos_idx=$1
 else
-    # specific for macOS
-    pos_idx=`ps -a | grep "login -pf" | wc -l` # current number of windows + 1
+    # specific for macOS Terminal.app
+    # (iTerm.app uses slightly different flags)
+    pos_idx=`ps -a | grep "login -pf " | wc -l` # current number of windows + 1
     pos_idx=$(($pos_idx - 2))
 fi
 
