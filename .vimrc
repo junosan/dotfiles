@@ -4,6 +4,8 @@ filetype plugin on
 set timeoutlen=1000 ttimeoutlen=0
 set sw=4 sts=4 et
 
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
 " See http://vimdoc.sourceforge.net/htmldoc/syntax.html
 "
 " To define cCustomFunc, add the following (without " ) in ~/.vim/syntax/c.vim
